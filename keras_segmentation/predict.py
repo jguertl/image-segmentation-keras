@@ -67,10 +67,11 @@ def predict(model=None, inp=None, out_fname=None, checkpoints_path=None):
     seg_img = np.zeros((output_height, output_width, 3))
     colors = class_colors
     
-    colors[3][0] = 0
-    colors[3][1] = 102
-    colors[3][2] = 0
+    colors[15][0] = 255
+    colors[15][1] = 22
+    colors[15][2] = 96
     
+    print("_________")
     print(colors)
 
     for c in range(n_classes):
