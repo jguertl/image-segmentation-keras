@@ -66,6 +66,7 @@ def predict(model=None, inp=None, out_fname=None, checkpoints_path=None):
 
     seg_img = np.zeros((output_height, output_width, 3))
     colors = class_colors
+    colors[3] = (0,102,0)
 
     for c in range(n_classes):
         seg_img[:, :, 0] += ((pr[:, :] == c)*(colors[c][0])).astype('uint8')
