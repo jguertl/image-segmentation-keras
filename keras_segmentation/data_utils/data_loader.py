@@ -24,6 +24,7 @@ class_colors = [(random.randint(0, 255), random.randint(
     0, 255), random.randint(0, 255)) for _ in range(5000)]
 
 class_colors[15] = (255,22,96)
+class_colors[2] = (0,102,0)
 
 class DataLoaderError(Exception):
     pass
