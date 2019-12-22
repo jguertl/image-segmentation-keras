@@ -23,8 +23,9 @@ random.seed(DATA_LOADER_SEED)
 class_colors = [(random.randint(0, 255), random.randint(
     0, 255), random.randint(0, 255)) for _ in range(5000)]
 
-class_colors[15] = (255,22,96)
-class_colors[2] = (0,0,0)
+class_colors[15] = (0,0,0)
+class_colors[14] = (0,0,0)
+class_colors[16] = (0,0,0)
 
 class DataLoaderError(Exception):
     pass
